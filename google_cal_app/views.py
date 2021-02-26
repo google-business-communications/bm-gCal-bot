@@ -118,7 +118,7 @@ def callback(request):
         auth_code = request_body.get('authenticationResponse').get('code')
         redirect_uri = request_body.get('authenticationResponse').get('redirectUri')
 
-        print(f'redirect_uri extracted from authenticationResponse {redirect_uri}'')
+        print(f'redirect_uri extracted from authenticationResponse {redirect_uri}')
 
         # Exchange auth_code with OAuth provider and get access_token
         code_verifier = conv.code_verifier
