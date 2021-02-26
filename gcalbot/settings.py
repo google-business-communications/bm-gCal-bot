@@ -99,7 +99,7 @@ if os.getenv('GAE_APPLICATION', None):
           'HOST': os.environ['CLOUDSQL_HOST'],
           'USER': os.environ['CLOUDSQL_USER_NAME'],
           'PASSWORD': os.environ['CLOUDSQL_USER_PASSWORD'],
-          'NAME': 'gcal_bm_app',
+          'NAME': os.environ['CLOUDSQL_DB_NAME'],
       }
   }
 
