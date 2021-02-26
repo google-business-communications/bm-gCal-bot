@@ -220,7 +220,7 @@ def fetch_events(access_token, today):
 
   events = service.events().list(
       calendarId='primary',
-      timeMax=f'{today}T19:59:59-07:00',
+      timeMax=f'{today}T23:59:59-07:00',
       timeMin=f'{today}T06:00:00-07:00').execute()
 
   event_items = events.get('items')
